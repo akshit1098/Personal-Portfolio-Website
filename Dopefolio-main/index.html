@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Akshit Saxena</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/profile1.jpeg"
+              alt=""
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Akshit Saxena</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#education" class="header__link">
+                Education
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#experience" class="header__link">
+                Experience
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+            
+            <li class="header__sm-menu-link">
+              <a href="./index.html#education"> Education </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#experience"> Experience </a>
+            </li>
+
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I am Akshit Saxena</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            a dedicated developer specializing in mobile and web application development. 
+            With a strong passion for Software Engineering and Deep Learning, I strive to innovate and create impactful 
+            solutions that push the boundaries of technology.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#contact" class="btn btn--bg" style="margin-right: 20px;margin-bottom: 10px;">Contact me</a>
+          <a href="https://drive.google.com/file/d/1IHOf0zCFR6Y743FAtYK4v8Fxvo-5lcFK/view?usp=drive_link"  target="_blank"  class="btn btn--bg" style="margin-right: 20px;background-color: brown; color: white;">My Resume</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/akshitsaxena98" class="home-hero__social-icon-link" target="_blank">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/akshit1098" target="_blank" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="mailto:saxena.aks@northeastern.edu" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/mail.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://leetcode.com/u/saxenaakshit1998/" target="_blank" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/leetcode1.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad" style="background-image: url('./assets/png/about-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub" style="color: black;">
+            I am a driven Software Developer currently pursuing my Masters in Information Systems from 
+            Northeastern University in Boston. With a passion for problem-solving, I thrive on tackling 
+            challenging tasks and creating innovative solutions.
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para" style="color: black;">
+                Hey there! I'm
+                <strong>Akshit Saxena</strong>
+                and I'm a passionate <strong> Software Developer </strong> based in Boston. With over 
+                <strong> 3 years </strong> of work experience, I bring wealth of expertise and creativity to the table.
+                Most recently, I completed a 
+                <strong>Research SDE Co-op</strong>
+                at 
+                <strong>Cybersecurity and Privacy Institute, Khoury College of Computer Sciences</strong> in Boston.
+                Prior to that, I honed my skills as a full-time Associate <strong> Web and Mobile Application Developer </strong> at 
+                <strong>PricewaterhouseCoopers AC</strong> in Bangalore, India.
+              </p>
+              <p class="about__content-details-para" style="color: black;">
+                I'm a digital product enthusiast, always eager to explore and create innovative solutions. 
+                Throughout my career, I've developed a wide range of web and mobile applications for diverse clients, 
+                turning ideas into reality.
+              </p>
+            </div>
+            <!-- <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            > -->
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill" style="color: black;">Python</div>
+              <div class="skills__skill" style="color: black;">Java</div>
+              <div class="skills__skill" style="color: black;">JavaScript</div>
+              <div class="skills__skill" style="color: black;">React</div>
+              <div class="skills__skill" style="color: black;">Node.js</div>
+              <div class="skills__skill" style="color: black;">Swift</div>
+              <div class="skills__skill" style="color: black;">Kotlin</div>
+              <div class="skills__skill" style="color: black;">Native iOS</div>
+              <div class="skills__skill" style="color: black;">React Native</div>
+              <div class="skills__skill" style="color: black;">Design Patterns</div>
+              <div class="skills__skill" style="color: black;">Linux</div>
+              <div class="skills__skill" style="color: black;">Git</div>
+              <div class="skills__skill" style="color: black;">MySQL</div>
+              <div class="skills__skill" style="color: black;">MongoDB</div>
+              <div class="skills__skill" style="color: black;">SQLite</div>
+              <div class="skills__skill" style="color: black;">SQL</div>
+              <div class="skills__skill" style="color: black;">AWS</div>
+              <div class="skills__skill" style="color: black;">Docker</div>
+              <div class="skills__skill" style="color: black;">Data Science</div>
+              <div class="skills__skill" style="color: black;">Deep Learning</div>
+              <div class="skills__skill" style="color: black;">Neural Networks</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+    </section>
+    <section id="education" class="projects sec-pad" style="background-image: url('./assets/png/education-bg1.png'); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: auto;">
+
+
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main" style="color: black">Education</span>
+        </h2>
+        <div class="projects__content">
+          <div class="projects__row" style="margin-top: -50px;">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/neu.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                style="max-width: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title" style="color: black">Masters in Information Systems</h3>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -29px;"><i>Boston, MA</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -29px;"><i>GPA:- 3.8/4.0</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -30px;">(Jan 2023 - Present)</h1>
+              <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+               <b> Relevant Courses :-
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; <b>Application Engineering and Development (Application development using Java Swing)
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; Web Design and Development (MERN stack front end and backend web development)
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; Programming Structures and Algorithms (Using Java-OOPS and Python)
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; Data Science Engineering Methods and Tools (Using Python and R)
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black">
+                  &bull; Database Design and Database Management (MySQL)
+                </p>
+              </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/bmsit.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content" style="margin-top: -25px;">
+              <h3 class="projects__row-content-title">Bachelor of Engineering</h3>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -29px;"><i>Bengaluru, India</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -29px;"><i>GPA:- 8.18/10.0</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -30px;">(Aug 2016 - Aug 2020)</h1>
+              <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                Relevant Courses :-
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; Object Oriented Programming
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; Data Structures and Algorithms
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; Cloud Computing
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black;">
+                  &bull; Machine Learning
+                </p>
+                <p class="projects__row-content-desc" style="margin-top: -25px; color: black">
+                  &bull; Computer Networks and Security
+                </p>
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="projects sec-pad" style="background-image: url('./assets/png/work.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Experience</span>
+          <span class="heading-sec__sub">
+            I enjoy crafting a variety of web and mobile apps, each with its unique challenges and rewards. 
+            From sleek front-end designs to robust back-end systems, my diverse experience helps me create seamless 
+            and engaging user experiences.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row" style="margin-top: -50px;">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/Khoury.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Research Software Developer Co-op</h3>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -25px;"><i>Cybersecurity and Privacy Lab</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -29px;"><i>Boston, MA</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -30px;">(Jan 2024 - Aug 2024)</h1>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Led the mobile app development of the Wehe app (Net Neutrality Testing App) for iOS using Swift, SwiftUI, and React Native, ensuring a 
+                seamless user experience and resulting in a 30% increase in user engagement.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Employed shell scripts to analyze network traffic, rigorously testing for ISP differentiation and throttling 
+                to ensure accurate discrimination detection in the app, reducing false positives by 25%.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Utilized advanced React Native features like Hooks and Context API to optimize state management and enhance 
+                component reusability, improving overall app performance by 40%.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Implemented Core Data for managing complex data models and offline persistence, leveraged Dispatch Queue and multithreading 
+                techniques to optimize background tasks and enhance app performance, ensuring smooth UI interactions and reduced lag.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Developed custom UI components with SwiftUI, integrated asynchronous data fetching using URLSession and Combine, and adhered 
+                to Apple's design guidelines to create a modern and responsive user interface.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Developed custom UI components with SwiftUI, integrated asynchronous data fetching using URLSession and Combine, and adhered 
+                to Apple's design guidelines to create a modern and responsive user interface.
+              </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row" style="margin-top: -100px;">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/its.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content" style="margin-top: -25px;">
+              <h3 class="projects__row-content-title">Digital Experience Assistant</h3>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -25px;"><i>Digital Design Studio</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -29px;"><i>Boston, MA</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -30px;">(May 2023 - Present)</h1>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Collaborated closely with designers using Figma to translate UI/UX prototypes into highly functional React components, ensuring seamless integration and alignment with design specifications.
+
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Implemented UI/UX improvements based on feedback gathered from user testing and analysis, resulting in a 25% increase in user satisfaction and a 20% improvement in task completion rates.
+
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Conducted thorough UI/UX prototyping using Figma, Adobe XD, and InVision, facilitating clear communication and alignment between design and development teams throughout the project lifecycle.
+              </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row" style="margin-top: -100px;">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/pwc1.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                style="max-width: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="projects__row-content" style="margin-top: -25px;">
+              <h3 class="projects__row-content-title">Software Developer</h3>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -25px;"><i>PricewaterhouseCoopers Service Delivery Center</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -29px;"><i>Bengaluru, India</i></h1>
+              <h1 class="projects__row-content-desc" style="color: black; margin-top: -30px;">(Aug 2020 - Dec 2022)</h1>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Developed efficient native and cross-platform iOS/Android/React Native apps with clean architecture using MVC/MVVM, propelling a remarkable 45% surge in downloads, enriched user experiences, and amplified code re-usability.
+
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Integrated Core Data, SQLite for 20% faster data retrieval, and utilized local authentication, Firebase for a 30% authentication speedup, fortifying security.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Employed CocoaPods to seamlessly integrate Alamofire for efficient network requests and API interactions, ensuring swift data retrieval and synchronization across platforms, markedly enhancing app performance and user satisfaction.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Designed user-friendly websites as a Full Stack Web Developer, utilizing React JS, jQuery, Express JS, NodeJS and MongoDB. Notably, an optimized check-out page achieved a remarkable 25% increase in clicks and a significant 33% boost in traffic, contributing to enhanced user experiences and heightened website performance.
+              </p>
+              <p class="projects__row-content-desc" style="margin-top: -25px;">
+                &bull; Conducted comprehensive unit and UI testing, mastering agile methodologies while driving end-to-end software development from analysis to coding. Ensured compliance, quality control, and rigorous QA across the SDLC.
+              </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad" style="background-image: url('./assets/png/projects-bg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub" style="color: white;">
+            Discover a range of web and mobile applications, each demonstrating a commitment to innovation and user-centric design. 
+            These projects reflect my dedication to creating impactful, seamless experiences through advanced technology
+          </span>
+        </h2>
+        <div class="scroll-container">
+          <div class="scroll-button left">&lt;</div>
+            <div class="scrolll-container">
+              <a href="https://github.com/akshit1098/GrubBytes" target="_blank">
+                <img src="./assets/png/grubbytesproject.png" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <a href="https://github.com/akshit1098/WhatsChat" target="_blank">
+                <img src="./assets/png/chachatproject.png" alt="Forest" width="600" height="400">
+              </a>
+              <a href="https://github.com/akshit1098/What-s-Your-Weather" target="_blank">
+                <img src="./assets/png/weatherbasedUVIndicator.png" alt="Northern Lights" width="600" height="400">
+              </a>
+              <a href="https://github.com/akshit1098/TranscriberSpeechRecognition" target="_blank">
+                <img src="./assets/png/Transcriberproject.png" alt="Mountains" width="600" height="400">
+              </a>
+              <a href="https://github.com/akshit1098/ClickedAndShared" target="_blank">
+                <img src="./assets/png/Quickshare.png" alt="Mountains" width="600" height="400">
+              </a>
+              <a href="https://github.com/akshit1098/Get-Live-Location" target="_blank">
+                <img src="./assets/png/location-project.png" alt="Mountains" width="600" height="400">
+              </a>
+              
+            </div>
+          <div class="scroll-button right">&gt;</div>
+        </div>
+
+        
+
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg" style="background-image: url('./assets/png/contact-bg.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt" style="color: black;">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt" style="color: black;">
+           Have something on your mind? Share your name, email, and message below, and let’s start the conversation!
+          </span>
+        </h2>
+        <div class="contact__form-container">
+  <form id="contactForm" action="https://formspree.io/f/xnnajwrr" method = "POST"class="contact__form">
+    <div class="contact__form-field">
+      <label class="contact__form-label" for="name">Name</label>
+      <input
+        required
+        placeholder="Enter Your Name"
+        type="text"
+        class="contact__form-input"
+        name="name"
+        id="name"
+      />
+    </div>
+    <div class="contact__form-field">
+      <label class="contact__form-label" for="email">Email</label>
+      <input
+        required
+        placeholder="Enter Your Email"
+        type="email"
+        class="contact__form-input"
+        name="email"
+        id="email"
+      />
+    </div>
+    <div class="contact__form-field">
+      <label class="contact__form-label" for="message">Message</label>
+      <textarea
+        required
+        cols="30"
+        rows="10"
+        class="contact__form-input"
+        placeholder="Enter Your Message"
+        name="message"
+        id="message"
+      ></textarea>
+    </div>
+    <button type="submit" class="btn btn--theme contact__btn">
+      Submit
+    </button>
+  </form>
+</div>
+
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Contact</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a href="https://www.linkedin.com/in/akshitsaxena98" target="_blank" rel="noreferrer">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a href="https://github.com/akshit1098" target="_blank" rel="noreferrer">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <!-- <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a> -->
+              <!-- <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a> -->
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Akshit Saxena</h4>
+            <p class="main-footer__short-desc">
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2024. Made by
+          Akshit Saxena
+        </div>
+      </div>
+    </footer>
+
+    
+    
+    
+  </body>
+</html>
